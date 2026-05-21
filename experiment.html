@@ -287,7 +287,7 @@ img, video { max-width: 100%; height: auto; display: block; }
   position: absolute;
   bottom: 28px; left: 50%;
   transform: translateX(-50%);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.5);
@@ -873,7 +873,7 @@ section.warm .member-cell { background: var(--paper-warm); }
 .testimonial-attrib {
   margin-top: 28px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold-deep, #8a5e2c);
@@ -1268,7 +1268,7 @@ footer {
 }
 .delta-drivers-label {
   grid-column: 1 / -1;
-  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
   color: rgba(20,17,13,0.55); font-weight: 500; margin-bottom: 4px;
 }
 .delta-driver {
@@ -1333,7 +1333,7 @@ footer {
 .exp-stage-step {
   position: absolute; top: 28px; right: 36px;
   font-family: 'JetBrains Mono', monospace; font-weight: 400;
-  font-size: 11px; color: var(--gold-deep);
+  font-size: 12px; color: var(--gold-deep);
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 
@@ -1367,14 +1367,14 @@ footer {
 .exp-copy h3 em { font: inherit; color: inherit; }
 .exp-copy p { font-size: 16px; line-height: 1.6; color: #5b544a; margin: 0 0 24px; max-width: 50ch; }
 .exp-integ-label {
-  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
   color: #9a9082; font-weight: 500; margin-top: 12px; margin-bottom: 14px;
 }
 .exp-stat-row { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 6px; }
 .exp-stat { border-top: 1px solid rgba(20,17,13,0.12); padding-top: 14px; }
 .exp-stat-num { font-family: 'Cormorant', serif; font-style: italic; font-weight: 500; font-size: 32px; color: #14110D; line-height: 1; }
 .exp-stat-num small { font-size: 16px; opacity: 0.6; }
-.exp-stat-lbl { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7a7268; font-weight: 500; margin-top: 6px; }
+.exp-stat-lbl { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #7a7268; font-weight: 500; margin-top: 6px; }
 
 .exp-logos { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; max-width: 380px; }
 .exp-logo-cell {
@@ -1643,7 +1643,7 @@ footer {
   }
   .mobile-trajectory-kicker {
     font-family: 'Inter', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -1684,7 +1684,7 @@ footer {
   }
   .mobile-story-card .step {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.16em;
     color: var(--gold-deep);
     text-transform: uppercase;
@@ -1887,7 +1887,7 @@ footer {
   font-family: 'JetBrains Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--gold-light);
   margin-bottom: 8px;
 }
@@ -1945,7 +1945,7 @@ footer {
 .evidence-ledger-card strong {
   display: block;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--gold-deep);
@@ -2054,7 +2054,7 @@ footer {
   font-family: 'JetBrains Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 0.13em;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--gold-light);
   margin: 0 0 8px;
 }
@@ -2103,6 +2103,135 @@ footer {
   font-size: 16px;
   line-height: 1.55;
 }
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+.credential-card {
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(246,244,238,0.055);
+}
+.credential-card strong {
+  display: block;
+  color: var(--gold-light);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.credential-card p {
+  margin: 0;
+  color: rgba(246,244,238,0.72);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.reroute-examples {
+  margin-top: 28px;
+  border-top: 1px solid rgba(246,244,238,0.12);
+  padding-top: 28px;
+}
+.reroute-examples h3 {
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin: 0 0 18px;
+}
+.reroute-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.reroute-card {
+  background: rgba(246,244,238,0.07);
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 22px;
+  padding: 22px;
+}
+.reroute-card .label {
+  color: var(--gold-light);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.reroute-card h4 {
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
+}
+.reroute-card p {
+  color: rgba(246,244,238,0.7);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+.membership-standard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 34px;
+}
+.standard-card {
+  border: 1px solid rgba(10,10,11,0.1);
+  border-radius: 22px;
+  background: rgba(246,244,238,0.62);
+  padding: 24px;
+}
+.standard-card strong {
+  display: block;
+  color: var(--gold-deep);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.standard-card p {
+  margin: 0;
+  color: #4A4A4D;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.apply-assurance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+.apply-assurance div {
+  border: 1px solid rgba(246,244,238,0.12);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: rgba(246,244,238,0.72);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.apply-assurance strong {
+  display: block;
+  color: var(--paper);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.legal-notes-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 920px) {
+  .credential-grid, .reroute-grid, .membership-standard, .apply-assurance { grid-template-columns: 1fr; }
+  .legal-notes-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 760px) {
   .midpage-cta-card { grid-template-columns: 1fr; }
   .midpage-cta-card .btn { width: 100%; justify-content: center; }
@@ -2406,6 +2535,12 @@ footer {
     <div class="fade-in">
       <h2 class="display h2" style="color: var(--paper); max-width: 15ch;">AI is useful only after the physician question is clear.</h2>
       <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.74); max-width: 58ch;">Aleron is not a chatbot wrapped around lab results. The clinical job is narrower and more serious: find the risk, capacity, or vitality signal that should change the next decision, then decide what to do now.</p>
+      <div class="credential-grid" aria-label="Clinical trust standards">
+        <div class="credential-card"><strong>Named physician</strong><p>Before intake, members see who is responsible for care, where that physician is licensed, and how to reach the care team.</p></div>
+        <div class="credential-card"><strong>State coverage</strong><p>Aleron currently screens for California and Texas availability, with telehealth boundaries confirmed before care begins.</p></div>
+        <div class="credential-card"><strong>AI boundary</strong><p>AI organizes signals and drafts questions. The physician owns the medical judgment and the final plan.</p></div>
+        <div class="credential-card"><strong>Response standard</strong><p>The fit screen sets expectations for messaging, follow-up cadence, and when a finding requires urgent local care.</p></div>
+      </div>
       <div class="physician-proof-list">
         <article><h4>Before the visit</h4><p>Your physician reviews the risk picture, wearable trends, genetics, labs, family history, medications, and the model output before the consult starts.</p></article>
         <article><h4>During the visit</h4><p>The hour is spent on decisions: what matters, what does not, what to change, and what evidence would change the plan.</p></article>
@@ -2695,9 +2830,17 @@ footer {
       </div>
 
       <p class="delta-footnote">The ~60% headline is the <em>union</em> of these drivers: the share of members for whom <em>at least one</em> reroute is expected to fire. It is not the sum, which would over-count. Drawn from PREVENT (AHA 2023), MESA / CAC Consortium reclassification studies, CPIC + PharmGKB pharmacogenomic actionability data, and clinical-grade genetic-panel actionable yield in adult preventive populations.</p>
+      <div class="reroute-examples" aria-label="Reroute examples">
+        <h3>What a reroute can look like.</h3>
+        <div class="reroute-grid">
+          <div class="reroute-card"><div class="label">Cardiometabolic</div><h4>Earlier treatment, not another year of watching.</h4><p>ApoB, blood pressure, glycemic trend, family history, and coronary calcium can shift a member from reassurance to a concrete prevention plan.</p></div>
+          <div class="reroute-card"><div class="label">Cancer risk</div><h4>Different screening for the same person.</h4><p>Genetics and family history can change when screening starts, which specialist owns follow-up, and whether relatives should be tested.</p></div>
+          <div class="reroute-card"><div class="label">Medication fit</div><h4>Fewer blind trials.</h4><p>Pharmacogenomic flags can change medication selection, dose conversations, or the evidence needed before a plan is escalated.</p></div>
+        </div>
+      </div>
       <div class="evidence-ledger" aria-label="Evidence status">
         <div class="evidence-ledger-card"><strong>Known evidence</strong><p>Population studies support the individual drivers: CAC reclassification, Lp(a) prevalence, PGx actionability, and actionable genetic-panel yield.</p></div>
-        <div class="evidence-ledger-card"><strong>Aleron inference</strong><p>The headline combines overlapping drivers into an expected first-review reroute rate. It should be validated on Aleron member data over time.</p></div>
+        <div class="evidence-ledger-card"><strong>Aleron inference</strong><p>The headline combines overlapping drivers into an expected first-review reroute rate. Aleron should validate this on member data over time.</p></div>
         <div class="evidence-ledger-card"><strong>Claim boundary</strong><p>This page describes decision support and care-plan changes, not guaranteed disease prevention, risk reversal, or outcome improvement.</p></div>
       </div>
     </div>
@@ -2710,6 +2853,12 @@ footer {
     <div class="fade-in">
       <h2 class="display h2" style="">Why stay when nothing is wrong?</h2>
       <p class="lede" style="margin-top: var(--space-headline-lede); ">Because strong health is a position to maintain, not a report to file away.</p>
+    </div>
+
+    <div class="membership-standard" aria-label="Membership standard">
+      <div class="standard-card"><strong>Ongoing relationship</strong><p>The first review is the start. The value comes from closing loops as signals change, not from a one-time executive physical.</p></div>
+      <div class="standard-card"><strong>Price transparency</strong><p>Aleron is a premium preventive membership, not insurance. Membership scope, lab and genetics billing, and any out-of-pocket costs are reviewed before intake.</p></div>
+      <div class="standard-card"><strong>Specialty handoff</strong><p>When a finding needs cardiology, oncology, genetics, sleep medicine, or local urgent care, the plan names the right next owner.</p></div>
     </div>
 
     <div class="member-grid fade-in-stagger">
@@ -2769,7 +2918,12 @@ footer {
             <div><span>✓</span><p><strong>Employers and brokers:</strong> request a methodology walkthrough for executives, members, or insureds.</p></div>
             <div><span>✓</span><p><strong>Not a fit:</strong> emergency care, urgent symptoms, or a quick lab interpretation without ongoing care.</p></div>
           </div>
-          <div class="hero-ctas" style="margin-top: 0;">
+          <div class="apply-assurance" aria-label="Application assurances">
+            <div><strong>No surprise enrollment</strong>Review happens before intake, billing, labs, or genetics.</div>
+            <div><strong>Clear timing</strong>The response confirms availability and the next step for your state.</div>
+            <div><strong>Care boundary</strong>Urgent symptoms are routed to urgent local care, not a membership funnel.</div>
+          </div>
+          <div class="hero-ctas" style="margin-top: 24px;">
             <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Request review <span class="arrow">→</span></a>
             <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Request demo <span class="arrow">→</span></a>
           </div>
@@ -2783,6 +2937,7 @@ footer {
   <div class="container legal-notes-grid">
     <div id="privacy-note"><h4>Privacy note</h4><p>Aleron handles genetic, lab, wearable, and history data as sensitive health information in a HIPAA-aligned care environment. Your data is not sold to insurers or used to train outside models.</p></div>
     <div id="terms-note"><h4>Care boundary</h4><p>Aleron is preventive membership medicine. It is not emergency care, urgent care, or a substitute for immediate evaluation of new or worsening symptoms. Call 911 for emergencies.</p></div>
+    <div><h4>State disclosures</h4><p>California and Texas availability, physician licensure, telehealth limitations, and medical-board disclosures should be confirmed before a physician-patient relationship begins.</p></div>
     <div><h4>Evidence boundary</h4><p>Claims on this page describe decision support and care-plan changes. Outcomes claims require Aleron member data and clinical review.</p></div>
   </div>
 </section>
