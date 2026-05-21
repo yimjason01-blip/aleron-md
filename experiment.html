@@ -2310,9 +2310,413 @@ footer {
 .legal-notes-grid h4 { color: #F6F1E8; }
 .legal-notes-grid p { color: rgba(246,244,238,0.76); }
 .footer-legal-links a { color: rgba(246,244,238,0.78); }
+
+/* Iteration 3: fix visible text contrast and CTA hierarchy */
+.trust-rail-intro, .trust-rail-item {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(246,244,238,0.88);
+}
+.scrolly-step p {
+  color: #3F372E;
+  font-size: clamp(17px, 1.45vw, 20px);
+  line-height: 1.55;
+}
+.scrolly-svg .axis-label,
+.scrolly-svg .step-caption { fill: #342E27; }
+.exp-section .section-cta-row .btn-primary,
+.testimonial-section .section-cta-row .btn-primary,
+.warm .section-cta-row .btn-primary,
+.bone .section-cta-row .btn-primary {
+  background: #14110D;
+  color: #F6F1E8;
+  border-color: #14110D;
+  box-shadow: 0 18px 46px -24px rgba(20,17,13,0.55);
+}
+.fit-panel .btn-ghost { opacity: 0.76; }
+.fit-panel .btn-primary {
+  background: #F6F1E8;
+  color: #14110D;
+  border-color: #F6F1E8;
+}
+.integration-note,
+.testimonial-trust-note,
+.section-cta-row p {
+  color: #433D36;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.testimonial-quote {
+  font-style: normal;
+  font-family: 'Cormorant', serif;
+  line-height: 1.05;
+}
+.reroute-card .label {
+  color: #6F4B1F;
+  font-size: 13px;
+  font-weight: 700;
+}
+.reroute-card h4 {
+  color: #14110D;
+}
+.reroute-card p {
+  color: #4A433B;
+  font-size: 15px;
+  line-height: 1.58;
+}
+.evidence-ledger-card p,
+.delta-driver-note,
+.delta-footnote,
+.standard-card p,
+.member-cell p {
+  color: #463F37;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.delta-driver-label { color: #14110D; }
+.delta-drivers-label,
+.evidence-ledger-card strong,
+.standard-card strong,
+.member-cell .num {
+  color: #6F4B1F;
+  font-size: 13px;
+  font-weight: 700;
+}
+.delta-num-label { color: #332E28; }
+.legal-notes-grid p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(246,244,238,0.86);
+}
+.legal-notes-grid h4,
+.footer-col-title {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  font-size: 13px;
+  color: rgba(246,244,238,0.82);
+}
+
+
+/* Iteration 4: unify journey, CTAs, and legal readability */
+.hero .btn-primary { background: #F6F1E8; color: #14110D; border-color: #F6F1E8; }
+.exp-journey-map {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.exp-journey-step {
+  border: 1px solid rgba(20,17,13,0.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.64);
+  padding: 14px;
+}
+.exp-journey-step strong {
+  display: block;
+  color: #14110D;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.exp-journey-step span {
+  display: block;
+  color: #4A433B;
+  font-size: 13px;
+  line-height: 1.42;
+}
+.testimonial-card .testimonial-trust-note {
+  margin-top: 16px;
+  max-width: 52ch;
+  color: #3F382F;
+  font-size: 14px;
+  line-height: 1.55;
+  border-top: 1px solid rgba(20,17,13,0.12);
+  padding-top: 14px;
+}
+.testimonial-section .section-cta-row { display: none; }
+.delta-band {
+  margin-top: 46px;
+  padding: 28px;
+  border: 1px solid rgba(20,17,13,0.10);
+  border-radius: 34px;
+  background: rgba(255,255,255,0.46);
+  box-shadow: 0 30px 90px -70px rgba(20,17,13,0.45);
+}
+.reroute-examples { margin-top: 38px; }
+.evidence-ledger-card { padding: 24px; }
+.application-step p,
+.apply-assurance div,
+.legal-notes-grid p {
+  font-size: 15px;
+  line-height: 1.62;
+  color: rgba(246,244,238,0.88);
+}
+.apply-assurance div { background: rgba(246,244,238,0.06); }
+.fit-panel .btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgba(246,244,238,0.82);
+}
+.fit-panel .btn-ghost:hover { background: transparent; color: #F6F1E8; }
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  font-size: 14px;
+  line-height: 1.55;
+}
+@media (max-width: 920px) { .exp-journey-map { grid-template-columns: 1fr; } }
+
+
+/* Iteration 5: final CTA/readability floor */
+.exp-journey-step span,
+.testimonial-attrib,
+.testimonial-card .testimonial-trust-note {
+  font-size: 15px;
+  line-height: 1.58;
+  color: #3C352D;
+}
+.testimonial-attrib {
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+.exp-journey-step strong { font-size: 17px; }
+.apply-hero-ctas {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.apply-hero-ctas .btn-primary {
+  background: #F6F1E8;
+  color: #14110D;
+  border-color: #F6F1E8;
+  box-shadow: 0 18px 46px -24px rgba(246,241,232,0.72);
+}
+.apply-assurance div,
+.legal-notes-grid p {
+  font-size: 16px;
+  line-height: 1.66;
+  color: rgba(246,244,238,0.92);
+}
+.legal-notes-grid h4 { color: #F6F1E8; font-size: 14px; }
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  color: rgba(246,244,238,0.88);
+}
+.fit-list div { color: rgba(246,244,238,0.88); }
+.fit-list p { margin: 0; }
+
 @media (max-width: 760px) {
   .testimonial-card { padding: 18px; }
 }
+
+
+/* Iteration 3: fix visible text contrast and CTA hierarchy */
+.trust-rail-intro, .trust-rail-item {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(246,244,238,0.88);
+}
+.scrolly-step p {
+  color: #3F372E;
+  font-size: clamp(17px, 1.45vw, 20px);
+  line-height: 1.55;
+}
+.scrolly-svg .axis-label,
+.scrolly-svg .step-caption { fill: #342E27; }
+.exp-section .section-cta-row .btn-primary,
+.testimonial-section .section-cta-row .btn-primary,
+.warm .section-cta-row .btn-primary,
+.bone .section-cta-row .btn-primary {
+  background: #14110D;
+  color: #F6F1E8;
+  border-color: #14110D;
+  box-shadow: 0 18px 46px -24px rgba(20,17,13,0.55);
+}
+.fit-panel .btn-ghost { opacity: 0.76; }
+.fit-panel .btn-primary {
+  background: #F6F1E8;
+  color: #14110D;
+  border-color: #F6F1E8;
+}
+.integration-note,
+.testimonial-trust-note,
+.section-cta-row p {
+  color: #433D36;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.testimonial-quote {
+  font-style: normal;
+  font-family: 'Cormorant', serif;
+  line-height: 1.05;
+}
+.reroute-card .label {
+  color: #6F4B1F;
+  font-size: 13px;
+  font-weight: 700;
+}
+.reroute-card h4 {
+  color: #14110D;
+}
+.reroute-card p {
+  color: #4A433B;
+  font-size: 15px;
+  line-height: 1.58;
+}
+.evidence-ledger-card p,
+.delta-driver-note,
+.delta-footnote,
+.standard-card p,
+.member-cell p {
+  color: #463F37;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.delta-driver-label { color: #14110D; }
+.delta-drivers-label,
+.evidence-ledger-card strong,
+.standard-card strong,
+.member-cell .num {
+  color: #6F4B1F;
+  font-size: 13px;
+  font-weight: 700;
+}
+.delta-num-label { color: #332E28; }
+.legal-notes-grid p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(246,244,238,0.86);
+}
+.legal-notes-grid h4,
+.footer-col-title {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  font-size: 13px;
+  color: rgba(246,244,238,0.82);
+}
+
+
+/* Iteration 4: unify journey, CTAs, and legal readability */
+.hero .btn-primary { background: #F6F1E8; color: #14110D; border-color: #F6F1E8; }
+.exp-journey-map {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.exp-journey-step {
+  border: 1px solid rgba(20,17,13,0.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.64);
+  padding: 14px;
+}
+.exp-journey-step strong {
+  display: block;
+  color: #14110D;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.exp-journey-step span {
+  display: block;
+  color: #4A433B;
+  font-size: 13px;
+  line-height: 1.42;
+}
+.testimonial-card .testimonial-trust-note {
+  margin-top: 16px;
+  max-width: 52ch;
+  color: #3F382F;
+  font-size: 14px;
+  line-height: 1.55;
+  border-top: 1px solid rgba(20,17,13,0.12);
+  padding-top: 14px;
+}
+.testimonial-section .section-cta-row { display: none; }
+.delta-band {
+  margin-top: 46px;
+  padding: 28px;
+  border: 1px solid rgba(20,17,13,0.10);
+  border-radius: 34px;
+  background: rgba(255,255,255,0.46);
+  box-shadow: 0 30px 90px -70px rgba(20,17,13,0.45);
+}
+.reroute-examples { margin-top: 38px; }
+.evidence-ledger-card { padding: 24px; }
+.application-step p,
+.apply-assurance div,
+.legal-notes-grid p {
+  font-size: 15px;
+  line-height: 1.62;
+  color: rgba(246,244,238,0.88);
+}
+.apply-assurance div { background: rgba(246,244,238,0.06); }
+.fit-panel .btn-ghost {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgba(246,244,238,0.82);
+}
+.fit-panel .btn-ghost:hover { background: transparent; color: #F6F1E8; }
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  font-size: 14px;
+  line-height: 1.55;
+}
+@media (max-width: 920px) { .exp-journey-map { grid-template-columns: 1fr; } }
+
+
+/* Iteration 5: final CTA/readability floor */
+.exp-journey-step span,
+.testimonial-attrib,
+.testimonial-card .testimonial-trust-note {
+  font-size: 15px;
+  line-height: 1.58;
+  color: #3C352D;
+}
+.testimonial-attrib {
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+.exp-journey-step strong { font-size: 17px; }
+.apply-hero-ctas {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.apply-hero-ctas .btn-primary {
+  background: #F6F1E8;
+  color: #14110D;
+  border-color: #F6F1E8;
+  box-shadow: 0 18px 46px -24px rgba(246,241,232,0.72);
+}
+.apply-assurance div,
+.legal-notes-grid p {
+  font-size: 16px;
+  line-height: 1.66;
+  color: rgba(246,244,238,0.92);
+}
+.legal-notes-grid h4 { color: #F6F1E8; font-size: 14px; }
+.footer-col a, .footer-col span, .footer-note, .footer-bottom, .footer-legal-links a {
+  color: rgba(246,244,238,0.88);
+}
+.fit-list div { color: rgba(246,244,238,0.88); }
+.fit-list p { margin: 0; }
 
 @media (max-width: 760px) {
   .midpage-cta-card { grid-template-columns: 1fr; }
@@ -2360,7 +2764,7 @@ footer {
       <h1 class="display">Your best days are <span class="gold">still ahead</span>.</h1>
       <p class="lede">Physician-led preventive medicine for people with a lot left to do. Aleron turns your genetics, labs, wearable signals, and history into one clear plan, reviewed by a doctor who knows the whole picture.</p>
       <div class="hero-ctas">
-        <a href="#apply" class="btn btn-primary">Request membership review <span class="arrow">→</span></a>
+        <a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a>
         <a href="#experience" class="btn btn-ghost">See how it works <span class="arrow">→</span></a>
       </div>
       <div class="hero-proof-row" aria-label="Aleron proof points">
@@ -2502,7 +2906,7 @@ footer {
       <div class="scrolly-step" data-step="4">
         <h2 class="step-h">Let's Plot a New Trajectory.</h2>
         <p>The curve is not destiny. The work we do now is how more of life stays open: stronger years, better recovery, more trips, more climbs, more moments where your body still says yes. We are not just delaying decline. We are creating a future worth moving toward.</p>
-        <div class="trajectory-cta"><a href="#apply" class="btn btn-primary">Check availability <span class="arrow">→</span></a><small>California and Texas reviews open in waves so physician attention stays real.</small></div>
+        <div class="trajectory-cta"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><small>California and Texas reviews open in waves so physician attention stays real.</small></div>
       </div>
 
     </div>
@@ -2642,7 +3046,7 @@ footer {
         <h3>Want to know what would change your plan?</h3>
         <p>Start with a fit screen. We confirm state availability, goals, and whether Aleron is the right level of care before any intake begins.</p>
       </div>
-      <a href="#apply" class="btn btn-primary">Start the review <span class="arrow">→</span></a>
+      <a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -2734,7 +3138,14 @@ footer {
     </div>
 
     <div class="exp-progress"><div class="exp-progress-fill" id="expProgFill"></div></div>
-    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><p>Requesting review comes before enrollment, billing, labs, or genetics.</p></div>
+    <div class="exp-journey-map" aria-label="Aleron journey summary">
+      <div class="exp-journey-step"><strong>01 Onboarding</strong><span>Family history, goals, baseline health, and devices connect first.</span></div>
+      <div class="exp-journey-step"><strong>02 Genetics</strong><span>A clinical-grade panel looks for variants that can change screening, medication, or family-risk decisions.</span></div>
+      <div class="exp-journey-step"><strong>03 Bloodwork</strong><span>Labs establish risk, inflammation, metabolism, and drift that ordinary physicals often miss.</span></div>
+      <div class="exp-journey-step"><strong>04 Consult</strong><span>The visit starts after the physician has reviewed the full pattern, so the hour is spent on decisions.</span></div>
+      <div class="exp-journey-step"><strong>05 Rerun</strong><span>The active plan reruns as new labs and wearable signals show whether the priority is working.</span></div>
+    </div>
+    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><p>Review comes before enrollment, billing, labs, or genetics. The first step is a fit screen.</p></div>
   </div>
 
   <script>
@@ -2800,6 +3211,7 @@ footer {
           <div>
             <p class="testimonial-quote">"Best part isn't the labs or the engine. It's getting a voice message from my doctor on a Tuesday afternoon explaining what to do next, like a friend who happens to be brilliant."</p>
             <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
+            <p class="testimonial-trust-note">Illustrative member scenario until Aleron has permissioned member stories. Not an outcomes claim.</p>
           </div>
         </div>
 
@@ -2810,6 +3222,7 @@ footer {
           <div>
             <p class="testimonial-quote">"My wife signed me up. I was the skeptic. Six months in I'm the one telling friends they need this. It's the first time I've felt actually seen by a doctor."</p>
             <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
+            <p class="testimonial-trust-note">Illustrative member scenario until Aleron has permissioned member stories. Not an outcomes claim.</p>
           </div>
         </div>
 
@@ -2820,6 +3233,7 @@ footer {
           <div>
             <p class="testimonial-quote">"I have a family history of breast cancer. Aleron flagged a risk pattern my last three physicians had missed, and built a screening cadence that actually fits my life."</p>
             <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
+            <p class="testimonial-trust-note">Illustrative member scenario until Aleron has permissioned member stories. Not an outcomes claim.</p>
           </div>
         </div>
 
@@ -2830,13 +3244,12 @@ footer {
           <div>
             <p class="testimonial-quote">"Aleron caught my ApoB trend three years before my regular physical would have. That's the part I'm still thinking about."</p>
             <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
+            <p class="testimonial-trust-note">Illustrative member scenario until Aleron has permissioned member stories. Not an outcomes claim.</p>
           </div>
         </div>
 
       </div>
 
-      <p class="testimonial-trust-note">These are illustrative member scenarios until Aleron has permissioned member stories. They are not outcomes claims.</p>
-      <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Request your fit screen <span class="arrow">→</span></a><p>Two-minute first step. We confirm state availability before intake.</p></div>
       <div class="testimonial-controls">
         <div class="testimonial-dots" role="tablist" aria-label="Testimonials">
           <button class="testimonial-dot is-active" data-i="0" aria-label="Testimonial 1"></button>
@@ -2931,7 +3344,7 @@ footer {
         <div class="evidence-ledger-card"><strong>Aleron inference</strong><p>The headline combines overlapping drivers into an expected first-review reroute rate. Aleron should validate this on member data over time.</p></div>
         <div class="evidence-ledger-card"><strong>Claim boundary</strong><p>This page describes decision support and care-plan changes, not guaranteed disease prevention, risk reversal, or outcome improvement.</p></div>
       </div>
-      <div class="section-cta-row"><a href="#apply" class="btn btn-primary">See if your plan would change <span class="arrow">→</span></a><p>The first step is a fit screen, not a diagnosis or enrollment commitment.</p></div>
+      <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><p>The first step is a fit screen, not a diagnosis or enrollment commitment.</p></div>
     </div>
   </div>
 </section>
@@ -2982,7 +3395,7 @@ footer {
         <p>Guidelines, trials, genetic interpretation, and screening standards change. We tell you when they change <em>your</em> plan.</p>
       </div>
     </div>
-    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for the current wave <span class="arrow">→</span></a><p>Scope, costs, labs, genetics, and out-of-pocket exposure are reviewed before intake.</p></div>
+    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><p>Scope, costs, labs, genetics, and out-of-pocket exposure are reviewed before intake.</p></div>
   </div>
 </section>
 
@@ -2990,13 +3403,14 @@ footer {
 <section class="dark" id="apply">
   <div class="container">
     <div class="fade-in">
-      <h2 class="display h2" style="color: var(--paper); max-width: 16ch;">If this is the future you want, request review.</h2>
+      <h2 class="display h2" style="color: var(--paper); max-width: 16ch;">If this is the future you want, apply for review.</h2>
       <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.78); max-width: 62ch;">Aleron is built for members who want continuous preventive oversight, not a one-time executive physical. Membership opens in waves so the physician relationship stays real.</p>
+      <div class="apply-hero-ctas"><a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Employer demo <span class="arrow">→</span></a></div>
 
       <div class="apply-grid-v2">
         <div class="application-panel">
           <div class="application-flow">
-            <div class="application-step"><div class="badge">01</div><div><h4>Request membership review.</h4><p>Tell us where you live, what you want to protect, and what you have already tried. We reply with the next step and timing. Current availability: California and Texas.</p></div></div>
+            <div class="application-step"><div class="badge">01</div><div><h4>Apply for review.</h4><p>Tell us where you live, what you want to protect, and what you have already tried. We reply with the next step and timing. Current availability: California and Texas.</p></div></div>
             <div class="application-step"><div class="badge">02</div><div><h4>Fit screen before intake.</h4><p>We confirm whether the Aleron model fits your goals, risk profile, and care needs. Some people need urgent care, primary care, or specialty care first.</p></div></div>
             <div class="application-step"><div class="badge">03</div><div><h4>Physician-led intake.</h4><p>If accepted into a membership wave, the work begins with history, wearable connection, labs, genetics, and the first physician review.</p></div></div>
           </div>
@@ -3014,8 +3428,8 @@ footer {
             <div><strong>Care boundary</strong>Urgent symptoms are routed to urgent local care, not a membership funnel.</div>
           </div>
           <div class="hero-ctas" style="margin-top: 24px;">
-            <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Apply for current wave <span class="arrow">→</span></a>
-            <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Request demo <span class="arrow">→</span></a>
+            <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Apply for review <span class="arrow">→</span></a>
+            <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Employer demo <span class="arrow">→</span></a>
           </div>
         </div>
       </div>
