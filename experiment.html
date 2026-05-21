@@ -17,15 +17,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #0A0A0B;            /* cool ink — hero only (cold rain) */
-  --ink-warm: #14110D;       /* warm ink — engine, CTA */
+  --ink: #0A0A0B;            /* cool ink - hero only (cold rain) */
+  --ink-warm: #14110D;       /* warm ink - engine, CTA */
   --ink-2: #14140F;
   --ink-3: #1A1612;
   --umber-1: #1F1813;        /* warm dark, founder section top */
   --umber-2: #2A1F18;        /* warm dark, founder section bottom */
   --paper: #F6F4EE;
   --paper-warm: #EFEAE0;     /* trajectory, MD, compare */
-  --bone: #ECE5D6;           /* membership — slightly cooler/clinical */
+  --bone: #ECE5D6;           /* membership - slightly cooler/clinical */
   --gold: #D4A574;
   --gold-light: #E8C99A;
   --gold-deep: #B8854D;
@@ -361,7 +361,7 @@ section.bone.glow::after {
 section.warm.glow > *,
 section.bone.glow > * { position: relative; z-index: 1; }
 
-/* Seam bridges — feather dark↔warm transitions */
+/* Seam bridges - feather dark/warm transitions */
 section.seam-top-warm::before {
   content: ''; position: absolute; top: -1px; left: 0; right: 0; height: 80px;
   background: linear-gradient(to bottom, var(--paper-warm), transparent);
@@ -426,7 +426,7 @@ section.dark .fear-block .body-lg, section.deep .fear-block .body-lg { color: rg
 }
 .trajectory-svg.drawn .label { opacity: 1; }
 
-/* ============ SCROLLYTELLING — Trajectory (Option A) ============ */
+/* ============ SCROLLYTELLING - Trajectory (Option A) ============ */
 .scrolly-section { padding: 0; min-height: 100vh; }
 .scrolly-section {
   --traj-gold-text: #624400;
@@ -1065,7 +1065,7 @@ footer {
 .fade-in-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.32s; }
 .fade-in-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
 
-/* ============ PHONE FRAME — hand-drawn (Antique Gold) ============ */
+/* ============ PHONE FRAME - hand-drawn (Antique Gold) ============ */
 .phone-frame {
   position: relative;
   width: 320px;
@@ -1202,7 +1202,7 @@ footer {
   line-height: 1.5;
 }
 
-/* Phone in MD section — 25% smaller */
+/* Phone in MD section - 25% smaller */
 .md-ai-phone-col .phone-frame { width: 285px; }
 @media (min-width: 1100px) {
   .md-ai-phone-col .phone-frame { width: 315px; }
@@ -1310,7 +1310,7 @@ footer {
   letter-spacing: 0.01em;
 }
 
-/* ============ EXPERIENCE SECTION (04) — Apple-style tab-swap on cream ============ */
+/* ============ EXPERIENCE SECTION (04) - Apple-style tab-swap on cream ============ */
 .exp-section { background: var(--bone); color: var(--ink); padding-top: var(--section-y); padding-bottom: var(--section-y); }
 .exp-section .container { max-width: 1240px; }
 
@@ -1779,6 +1779,341 @@ footer {
   footer { padding: 30px 0 96px; }
 }
 
+
+/* ============ EXPERIMENTAL TRUST AND CONVERSION LAYER ============ */
+.hero .btn-primary {
+  background: var(--gold-light);
+  color: var(--ink);
+  border-color: rgba(246,244,238,0.64);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.26);
+}
+.hero .btn-primary:hover { background: #F6E4A4; }
+.hero-proof-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+  max-width: 760px;
+}
+.hero-proof-pill {
+  border: 1px solid rgba(246,244,238,0.22);
+  background: rgba(10,10,11,0.38);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: rgba(246,244,238,0.84);
+  font-size: 12px;
+  line-height: 1.35;
+}
+.hero-proof-pill strong {
+  display: block;
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 18px;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.trust-rail {
+  background: var(--ink-warm);
+  color: var(--paper);
+  border-top: 1px solid rgba(246,244,238,0.1);
+  border-bottom: 1px solid rgba(246,244,238,0.08);
+  padding: 28px 0;
+}
+.trust-rail-grid {
+  display: grid;
+  grid-template-columns: 1.15fr repeat(4, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+.trust-rail-intro {
+  color: rgba(246,244,238,0.74);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.trust-rail-intro strong {
+  display: block;
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.trust-rail-item {
+  border-left: 1px solid rgba(246,244,238,0.16);
+  padding-left: 18px;
+  color: rgba(246,244,238,0.68);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.trust-rail-item strong {
+  display: block;
+  color: var(--gold-light);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+}
+.physician-proof-section {
+  background: linear-gradient(180deg, #17120E 0%, #241A13 100%);
+  color: var(--paper);
+  padding: var(--section-y) 0;
+}
+.physician-proof-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.84fr) minmax(0, 1.16fr);
+  gap: clamp(28px, 6vw, 88px);
+  align-items: center;
+}
+.physician-card {
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 34px;
+  background: rgba(246,244,238,0.06);
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.3);
+}
+.physician-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.8;
+  object-fit: cover;
+}
+.physician-card-copy {
+  padding: 22px 24px 26px;
+}
+.physician-card-copy .eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+.physician-card-copy h3 {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  margin: 0 0 10px;
+}
+.physician-card-copy p {
+  color: rgba(246,244,238,0.68);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+.physician-proof-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 34px;
+}
+.physician-proof-list article {
+  border: 1px solid rgba(246,244,238,0.12);
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(246,244,238,0.04);
+}
+.physician-proof-list h4 {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+  color: var(--paper);
+}
+.physician-proof-list p {
+  margin: 0;
+  color: rgba(246,244,238,0.66);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.evidence-ledger {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.evidence-ledger-card {
+  border: 1px solid rgba(10,10,11,0.1);
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(246,244,238,0.68);
+}
+.evidence-ledger-card strong {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--gold-deep);
+  margin-bottom: 10px;
+}
+.evidence-ledger-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.apply-grid-v2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.9fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+  margin-top: 42px;
+}
+.application-panel {
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 30px;
+  padding: clamp(24px, 4vw, 38px);
+  background: rgba(246,244,238,0.06);
+}
+.application-flow {
+  display: grid;
+  gap: 14px;
+}
+.application-step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(246,244,238,0.06);
+  border: 1px solid rgba(246,244,238,0.1);
+}
+.application-step .badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: var(--gold-light);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+}
+.application-step h4 {
+  margin: 0 0 6px;
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+.application-step p {
+  margin: 0;
+  color: rgba(246,244,238,0.68);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.fit-panel {
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 30px;
+  padding: clamp(24px, 4vw, 38px);
+  background: linear-gradient(180deg, rgba(246,244,238,0.1), rgba(246,244,238,0.035));
+}
+.fit-panel h3 {
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  margin: 0 0 20px;
+}
+.fit-list {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 30px;
+}
+.fit-list div {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  color: rgba(246,244,238,0.76);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.fit-list span {
+  color: var(--gold-light);
+}
+.legal-notes {
+  background: #0F0D0B;
+  color: rgba(246,244,238,0.72);
+  padding: 34px 0;
+  border-top: 1px solid rgba(246,244,238,0.08);
+}
+.legal-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.legal-notes h4 {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 11px;
+  color: var(--gold-light);
+  margin: 0 0 8px;
+}
+.legal-notes p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.footer-legal-links a { color: rgba(246,244,238,0.62); }
+.midpage-cta {
+  background: #17120E;
+  color: var(--paper);
+  border-top: 1px solid rgba(246,244,238,0.1);
+  border-bottom: 1px solid rgba(246,244,238,0.08);
+  padding: 42px 0;
+}
+.midpage-cta-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid rgba(246,244,238,0.14);
+  border-radius: 28px;
+  background: rgba(246,244,238,0.06);
+  padding: clamp(24px, 4vw, 38px);
+}
+.midpage-cta-card h3 {
+  margin: 0 0 8px;
+  color: var(--paper);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+.midpage-cta-card p {
+  margin: 0;
+  max-width: 62ch;
+  color: rgba(246,244,238,0.72);
+  font-size: 16px;
+  line-height: 1.55;
+}
+@media (max-width: 760px) {
+  .midpage-cta-card { grid-template-columns: 1fr; }
+  .midpage-cta-card .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 920px) {
+  .hero-proof-row, .trust-rail-grid, .physician-proof-grid, .physician-proof-list, .evidence-ledger, .apply-grid-v2, .legal-notes-grid { grid-template-columns: 1fr; }
+  .hero-proof-row { max-width: none; }
+  .trust-rail-item { border-left: 0; border-top: 1px solid rgba(246,244,238,0.14); padding: 14px 0 0; }
+}
+
 </style>
 </head>
 <body>
@@ -1812,17 +2147,33 @@ footer {
   <div class="hero-content">
     <div class="hero-content-inner">
       <h1 class="display">Your best days are <span class="gold">still ahead</span>.</h1>
-      <p class="lede">You already know it's possible. Our physicians leverage AI and your genetic, lab, and wearable data to give you a clear path to your future moments.</p>
+      <p class="lede">Physician-led preventive medicine for people with a lot left to do. Aleron turns your genetics, labs, wearable signals, and history into one clear plan, reviewed by a doctor who knows the whole picture.</p>
       <div class="hero-ctas">
-        <a href="#apply" class="btn btn-primary">Apply <span class="arrow">→</span></a>
-        <a href="#demo" class="btn btn-ghost">See a demo <span class="arrow">→</span></a>
+        <a href="#apply" class="btn btn-primary">Request membership review <span class="arrow">→</span></a>
+        <a href="#experience" class="btn btn-ghost">See how it works <span class="arrow">→</span></a>
+      </div>
+      <div class="hero-proof-row" aria-label="Aleron proof points">
+        <div class="hero-proof-pill"><strong>163 genes</strong>clinical-grade hereditary and pharmacogenomic screen</div>
+        <div class="hero-proof-pill"><strong>100 markers</strong>Quest Elite panel, trended twice yearly</div>
+        <div class="hero-proof-pill"><strong>90 days</strong>default rerun cadence for the active plan</div>
+        <div class="hero-proof-pill"><strong>CA + TX</strong>membership waves currently open</div>
       </div>
     </div>
   </div>
   <div class="scroll-cue">Scroll</div>
 </section>
 
-<!-- ============ SECTION 01 — Trajectory (Option A — scrollytelling) ============ -->
+<section class="trust-rail" aria-label="Aleron trust summary">
+  <div class="container trust-rail-grid">
+    <div class="trust-rail-intro"><strong>Built like medical care, not a wellness app.</strong>Every signal rolls up to a physician-reviewed plan with clear thresholds for act, recheck, or leave alone.</div>
+    <div class="trust-rail-item"><strong>Physician led</strong>Doctor review before recommendations. AI supports the review, it does not replace it.</div>
+    <div class="trust-rail-item"><strong>Data complete</strong>Genetics, labs, wearables, family history, medication response, and symptoms in one view.</div>
+    <div class="trust-rail-item"><strong>Privacy first</strong>Health data is handled inside a HIPAA-aligned care environment. No insurer resale. No outside model training.</div>
+    <div class="trust-rail-item"><strong>Selective access</strong>Membership opens in waves so each member has enough physician attention to matter.</div>
+  </div>
+</section>
+
+<!-- ============ SECTION 01 - Trajectory (Option A - scrollytelling) ============ -->
 <section class="bone scrolly-section" id="trajectory">
   <div class="scrolly-wrap">
     <!-- LEFT: sticky chart -->
@@ -1997,7 +2348,7 @@ footer {
     </div>
 </section>
 
-<!-- ============ SECTION 03 — MD × AI ============ -->
+<!-- ============ SECTION 03 - MD × AI ============ -->
 <section class="warm glow seam-top-warm md-ai-section" id="md">
   <div class="container">
     <div class="md-ai-grid fade-in">
@@ -2041,7 +2392,43 @@ footer {
   </div>
 </section>
 
-<!-- ============ SECTION 04 — Experience (cream, no nested dark stage) ============ -->
+<!-- ============ PHYSICIAN TRUST ============ -->
+<section class="physician-proof-section" id="clinical-proof">
+  <div class="container physician-proof-grid">
+    <div class="physician-card fade-in">
+      <img src="assets/dr-thompson.png" alt="Aleron physician portrait">
+      <div class="physician-card-copy">
+        <div class="eyebrow">Physician relationship</div>
+        <h3>Your doctor sees the whole system.</h3>
+        <p>Aleron starts with a physician who can hold the full pattern: risk, capacity, vitality, family history, medications, and the life you are trying to keep open.</p>
+      </div>
+    </div>
+    <div class="fade-in">
+      <h2 class="display h2" style="color: var(--paper); max-width: 15ch;">AI is useful only after the physician question is clear.</h2>
+      <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.74); max-width: 58ch;">Aleron is not a chatbot wrapped around lab results. The clinical job is narrower and more serious: find the risk, capacity, or vitality signal that should change the next decision, then decide what to do now.</p>
+      <div class="physician-proof-list">
+        <article><h4>Before the visit</h4><p>Your physician reviews the risk picture, wearable trends, genetics, labs, family history, medications, and the model output before the consult starts.</p></article>
+        <article><h4>During the visit</h4><p>The hour is spent on decisions: what matters, what does not, what to change, and what evidence would change the plan.</p></article>
+        <article><h4>After the visit</h4><p>You leave with one active priority, not a folder of interesting findings. The system watches whether the plan is working.</p></article>
+        <article><h4>At the rerun</h4><p>New labs and signals update the plan. A new priority surfaces only when the evidence supports a change.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="midpage-cta" aria-label="Membership review prompt">
+  <div class="container">
+    <div class="midpage-cta-card">
+      <div>
+        <h3>Want your own reroute reviewed?</h3>
+        <p>Start with a fit screen. We confirm state availability, goals, and whether Aleron is the right level of care before any intake begins.</p>
+      </div>
+      <a href="#apply" class="btn btn-primary">Start the review <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 04 - Experience (cream, no nested dark stage) ============ -->
 <section class="exp-section" id="experience">
   <div class="container">
     <div class="fade-in" style="max-width: 1100px;">
@@ -2179,7 +2566,7 @@ footer {
   </script>
 </section>
 
-<!-- ============ TESTIMONIAL — between Experience and Delta ============ -->
+<!-- ============ TESTIMONIAL - between Experience and Delta ============ -->
 <section class="testimonial-section">
   <div class="container">
     <div class="testimonial-carousel fade-in" id="testimonialCarousel">
@@ -2268,19 +2655,19 @@ footer {
   </script>
 </section>
 
-<!-- ============ SECTION 05 — The Delta (cream, anchor stat, methodology inline) ============ -->
+<!-- ============ SECTION 05 - The Delta (cream, anchor stat, methodology inline) ============ -->
 <section class="warm delta-section">
   <div class="container">
     <div class="fade-in" style="max-width: 1100px; margin: 0 auto;">
-      <h2 class="display h2" style="max-width: 22ch;">The proof is in the reroute.</h2>
-      <p class="lede" style="margin-top: var(--space-headline-lede); max-width: 60ch;">Same labs. Same body. Different decisions. When Aleron's engine + your physician review the full picture, the care plan changes for most members, because most prevention has been working from a partial picture.</p>
+      <h2 class="display h2" style="max-width: 22ch;">The evidence is the reroute.</h2>
+      <p class="lede" style="margin-top: var(--space-headline-lede); max-width: 62ch;">The point is not to collect more data. The point is to find the moment where the next decision changes: screen earlier, treat sooner, stop chasing noise, or watch a trend before symptoms appear.</p>
     </div>
 
     <div class="delta-band fade-in">
       <div class="delta-hero">
         <div class="delta-num">~60<span class="delta-pct">%</span></div>
-        <div class="delta-num-label">of new members leave their first review with at least <em>one</em> care-plan change a standard PCP wouldn't have made.</div>
-        <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); font-weight: 500; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">Composite, drawn from the studies below</div>
+        <div class="delta-num-label">modeled share of new members likely to have at least <em>one</em> decision-changing driver when the full Aleron intake is run.</div>
+        <div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); font-weight: 500; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">Modeled estimate, not yet an outcomes claim</div>
       </div>
 
       <div class="delta-drivers">
@@ -2307,7 +2694,12 @@ footer {
         </div>
       </div>
 
-      <p class="delta-footnote">The ~60% headline is the <em>union</em> of these drivers: the share of members for whom <em>at least one</em> reroute fires. It is not the sum (which would over-count). Drawn from PREVENT (AHA 2023), MESA / CAC Consortium reclassification studies, CPIC + PharmGKB pharmacogenomic actionability data, and clinical-grade genetic-panel actionable yield in adult preventive populations.</p>
+      <p class="delta-footnote">The ~60% headline is the <em>union</em> of these drivers: the share of members for whom <em>at least one</em> reroute is expected to fire. It is not the sum, which would over-count. Drawn from PREVENT (AHA 2023), MESA / CAC Consortium reclassification studies, CPIC + PharmGKB pharmacogenomic actionability data, and clinical-grade genetic-panel actionable yield in adult preventive populations.</p>
+      <div class="evidence-ledger" aria-label="Evidence status">
+        <div class="evidence-ledger-card"><strong>Known evidence</strong><p>Population studies support the individual drivers: CAC reclassification, Lp(a) prevalence, PGx actionability, and actionable genetic-panel yield.</p></div>
+        <div class="evidence-ledger-card"><strong>Aleron inference</strong><p>The headline combines overlapping drivers into an expected first-review reroute rate. It should be validated on Aleron member data over time.</p></div>
+        <div class="evidence-ledger-card"><strong>Claim boundary</strong><p>This page describes decision support and care-plan changes, not guaranteed disease prevention, risk reversal, or outcome improvement.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -2324,7 +2716,7 @@ footer {
       <div class="member-cell">
         <div class="num">01</div>
         <h4>Clinical-grade genetics</h4>
-        <p>167-gene panel screened for variants that can change screening, medication, and family-risk decisions for life.</p>
+        <p>163-gene panel screened for variants that can change screening, medication, and family-risk decisions for life.</p>
       </div>
       <div class="member-cell">
         <div class="num">02</div>
@@ -2355,30 +2747,43 @@ footer {
   </div>
 </section>
 
-<!-- ============ MEMBER STANDARD (07) — replaces the old defensive comparison grid ============ -->
-
-<!-- ============ APPLY (08) — closes the page on dark, conviction not pricing ============ -->
+<!-- ============ APPLY ============ -->
 <section class="dark" id="apply">
   <div class="container">
     <div class="fade-in">
-      <h2 class="display h2" style="color: var(--paper); max-width: 18ch;">Two paths in.</h2>
-      <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.78); max-width: 56ch;">If the rest of this page felt like the right shape, apply. We accept members in waves and review every application by hand. There is no faster path; there isn't supposed to be.</p>
+      <h2 class="display h2" style="color: var(--paper); max-width: 16ch;">If this is the future you want, request review.</h2>
+      <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.78); max-width: 62ch;">Aleron is built for members who want continuous preventive oversight, not a one-time executive physical. Membership opens in waves so the physician relationship stays real.</p>
 
-      <div class="paths-grid">
-        <div class="path-card">
-          <div class="num">For Individuals</div>
-          <h3>Apply for membership.</h3>
-          <p>Membership opens in waves. Apply to be considered for the current cohort. We're currently serving members in Texas and California.</p>
-          <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Application" class="btn btn-primary">Apply <span class="arrow">→</span></a>
+      <div class="apply-grid-v2">
+        <div class="application-panel">
+          <div class="application-flow">
+            <div class="application-step"><div class="badge">01</div><div><h4>Request membership review.</h4><p>Tell us where you live, what you want to protect, and what you have already tried. We reply with the next step and timing. Current availability: California and Texas.</p></div></div>
+            <div class="application-step"><div class="badge">02</div><div><h4>Fit screen before intake.</h4><p>We confirm whether the Aleron model fits your goals, risk profile, and care needs. Some people need urgent care, primary care, or specialty care first.</p></div></div>
+            <div class="application-step"><div class="badge">03</div><div><h4>Physician-led intake.</h4><p>If accepted into a membership wave, the work begins with history, wearable connection, labs, genetics, and the first physician review.</p></div></div>
+          </div>
         </div>
-        <div class="path-card" id="demo">
-          <div class="num">For Employers & Brokers</div>
-          <h3>See the system live.</h3>
-          <p>Bringing Aleron to your executives, members, or insureds? We'll walk you through a live demo of the platform and the methodology.</p>
-          <a href="mailto:partners@the-meridian-project.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">See a demo <span class="arrow">→</span></a>
+        <div class="fit-panel" id="demo">
+          <h3>Two doors. One standard.</h3>
+          <div class="fit-list">
+            <div><span>✓</span><p><strong>Individuals:</strong> apply for the current membership wave.</p></div>
+            <div><span>✓</span><p><strong>Employers and brokers:</strong> request a methodology walkthrough for executives, members, or insureds.</p></div>
+            <div><span>✓</span><p><strong>Not a fit:</strong> emergency care, urgent symptoms, or a quick lab interpretation without ongoing care.</p></div>
+          </div>
+          <div class="hero-ctas" style="margin-top: 0;">
+            <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Request review <span class="arrow">→</span></a>
+            <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Request demo <span class="arrow">→</span></a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="legal-notes" id="medical-note" aria-label="Medical and privacy notes">
+  <div class="container legal-notes-grid">
+    <div id="privacy-note"><h4>Privacy note</h4><p>Aleron handles genetic, lab, wearable, and history data as sensitive health information in a HIPAA-aligned care environment. Your data is not sold to insurers or used to train outside models.</p></div>
+    <div id="terms-note"><h4>Care boundary</h4><p>Aleron is preventive membership medicine. It is not emergency care, urgent care, or a substitute for immediate evaluation of new or worsening symptoms. Call 911 for emergencies.</p></div>
+    <div><h4>Evidence boundary</h4><p>Claims on this page describe decision support and care-plan changes. Outcomes claims require Aleron member data and clinical review.</p></div>
   </div>
 </section>
 
@@ -2399,7 +2804,7 @@ footer {
       <div class="footer-col">
         <div class="footer-col-title">Contact</div>
         <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Application">Membership</a>
-        <a href="mailto:partners@the-meridian-project.com?subject=Aleron%20Demo%20Request">Partnerships</a>
+        <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request">Partnerships</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Availability</div>
@@ -2412,6 +2817,11 @@ footer {
   <div class="footer-bottom">
     <span>© 2026 Aleron MD. A LASO Health company.</span>
     <span><a href="mailto:apply@AleronMD.com">apply@AleronMD.com</a></span>
+  </div>
+  <div class="footer-bottom footer-legal-links">
+    <a href="#privacy-note">Privacy note</a>
+    <a href="#terms-note">Terms note</a>
+    <a href="#medical-note">Medical disclaimer</a>
   </div>
 </footer>
 
