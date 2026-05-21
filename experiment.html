@@ -2232,6 +2232,88 @@ footer {
   .legal-notes-grid { grid-template-columns: 1fr; }
 }
 
+
+/* Iteration 2: score-floor fixes for CTA visibility, trust honesty, and readability */
+.hero .btn-primary,
+.midpage-cta-card .btn-primary,
+.fit-panel .btn-primary,
+.section-cta-row .btn-primary {
+  background: #F6F1E8;
+  color: #14110D;
+  border-color: #F6F1E8;
+  box-shadow: 0 18px 46px -22px rgba(246,241,232,0.75);
+}
+.hero .btn-ghost { background: rgba(20,17,13,0.42); border-color: rgba(246,244,238,0.62); color: #F8F4EC; }
+.hero-proof-pill { background: rgba(10,10,11,0.62); border-color: rgba(246,244,238,0.28); }
+.trust-rail-grid { color: rgba(246,244,238,0.86); }
+.trust-rail-item, .trust-rail-intro { border-color: rgba(246,244,238,0.18); }
+.trajectory-cta {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.trajectory-cta .btn-primary { background: #14110D; color: #F6F1E8; border-color: #14110D; }
+.trajectory-cta small { color: #5B5349; font-size: 13px; line-height: 1.4; max-width: 32ch; }
+.cred-intro {
+  margin: 22px 0 10px;
+  color: rgba(246,244,238,0.82);
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 58ch;
+}
+.credential-card { background: rgba(246,244,238,0.085); border-color: rgba(246,244,238,0.22); }
+.physician-proof-list article { background: rgba(246,244,238,0.07); border-color: rgba(246,244,238,0.18); }
+.exp-stage { box-shadow: 0 34px 90px -54px rgba(20,17,13,0.55); border: 1px solid rgba(20,17,13,0.10); }
+.exp-tab { color: #2E2923; background: rgba(255,255,255,0.58); border-color: rgba(20,17,13,0.22); }
+.exp-tab .num { color: #6B4A24; opacity: 1; }
+.exp-tab:not(.is-active):hover { background: rgba(255,255,255,0.88); }
+.integration-note {
+  margin-top: 12px;
+  color: #5F574E;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.section-cta-row {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.section-cta-row p { margin: 0; color: #514A42; font-size: 14px; line-height: 1.45; max-width: 42ch; }
+.testimonial-card {
+  background: rgba(255,255,255,0.58);
+  border: 1px solid rgba(20,17,13,0.10);
+  border-radius: 30px;
+  padding: 24px;
+  box-shadow: 0 28px 80px -60px rgba(20,17,13,0.55);
+}
+.testimonial-quote { max-width: 24ch; }
+.testimonial-attrib { color: #5F574E; }
+.testimonial-trust-note {
+  margin-top: 14px;
+  color: #5F574E;
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 44ch;
+}
+.testimonial-controls { margin-top: 18px; }
+.reroute-card { background: rgba(255,255,255,0.72); border-color: rgba(20,17,13,0.14); box-shadow: 0 22px 58px -52px rgba(20,17,13,0.35); }
+.evidence-ledger-card { background: #FBF7EF; border-color: rgba(20,17,13,0.14); }
+.delta-footnote { color: #4D463F; }
+.member-grid { margin-bottom: 0; }
+.apply-grid-v2 { align-items: stretch; }
+.application-panel, .fit-panel { background: rgba(246,244,238,0.075); border-color: rgba(246,244,238,0.18); box-shadow: 0 28px 80px -64px rgba(0,0,0,0.9); }
+.legal-notes-grid > div { background: rgba(246,244,238,0.045); border: 1px solid rgba(246,244,238,0.12); border-radius: 16px; padding: 18px; }
+.legal-notes-grid h4 { color: #F6F1E8; }
+.legal-notes-grid p { color: rgba(246,244,238,0.76); }
+.footer-legal-links a { color: rgba(246,244,238,0.78); }
+@media (max-width: 760px) {
+  .testimonial-card { padding: 18px; }
+}
+
 @media (max-width: 760px) {
   .midpage-cta-card { grid-template-columns: 1fr; }
   .midpage-cta-card .btn { width: 100%; justify-content: center; }
@@ -2420,6 +2502,7 @@ footer {
       <div class="scrolly-step" data-step="4">
         <h2 class="step-h">Let's Plot a New Trajectory.</h2>
         <p>The curve is not destiny. The work we do now is how more of life stays open: stronger years, better recovery, more trips, more climbs, more moments where your body still says yes. We are not just delaying decline. We are creating a future worth moving toward.</p>
+        <div class="trajectory-cta"><a href="#apply" class="btn btn-primary">Check availability <span class="arrow">→</span></a><small>California and Texas reviews open in waves so physician attention stays real.</small></div>
       </div>
 
     </div>
@@ -2535,6 +2618,7 @@ footer {
     <div class="fade-in">
       <h2 class="display h2" style="color: var(--paper); max-width: 15ch;">AI is useful only after the physician question is clear.</h2>
       <p class="lede" style="margin-top: var(--space-headline-lede); color: rgba(246,244,238,0.74); max-width: 58ch;">Aleron is not a chatbot wrapped around lab results. The clinical job is narrower and more serious: find the risk, capacity, or vitality signal that should change the next decision, then decide what to do now.</p>
+      <p class="cred-intro">The trust standard is simple: the member knows who owns the medical judgment, where care is available, what AI may do, and when local care is the right next step.</p>
       <div class="credential-grid" aria-label="Clinical trust standards">
         <div class="credential-card"><strong>Named physician</strong><p>Before intake, members see who is responsible for care, where that physician is licensed, and how to reach the care team.</p></div>
         <div class="credential-card"><strong>State coverage</strong><p>Aleron currently screens for California and Texas availability, with telehealth boundaries confirmed before care begins.</p></div>
@@ -2555,7 +2639,7 @@ footer {
   <div class="container">
     <div class="midpage-cta-card">
       <div>
-        <h3>Want your own reroute reviewed?</h3>
+        <h3>Want to know what would change your plan?</h3>
         <p>Start with a fit screen. We confirm state availability, goals, and whether Aleron is the right level of care before any intake begins.</p>
       </div>
       <a href="#apply" class="btn btn-primary">Start the review <span class="arrow">→</span></a>
@@ -2598,6 +2682,7 @@ footer {
             <div class="exp-logo-cell"><img src="assets/logos/dexcom.svg" alt="Dexcom"></div>
             <div class="exp-logo-cell"><img src="assets/logos/withings.svg" alt="Withings"></div>
           </div>
+          <p class="integration-note">Device data connects through available APIs where supported. Logos indicate data sources, not endorsement or official partnership.</p>
         </div>
 
         <!-- 02 Genetics -->
@@ -2628,7 +2713,7 @@ footer {
           </div>
         </div>
 
-        <!-- 05 Closure loop -->
+        <!-- 05 90-day rerun -->
         <div class="exp-pane" data-i="4">
           <h3>The consult isn't the finish line.</h3>
           <p>You leave with one top priority: the single thing that moves your risk picture most. As you act, your wearable streams the result. New labs feed back in. The engine reruns. A new top priority surfaces. The loop is the product.</p>
@@ -2645,10 +2730,11 @@ footer {
       <button class="exp-tab" data-i="1"><span class="num">02</span> Genetics</button>
       <button class="exp-tab" data-i="2"><span class="num">03</span> Bloodwork</button>
       <button class="exp-tab" data-i="3"><span class="num">04</span> Consult</button>
-      <button class="exp-tab" data-i="4"><span class="num">05</span> Closure loop</button>
+      <button class="exp-tab" data-i="4"><span class="num">05</span> 90-day rerun</button>
     </div>
 
     <div class="exp-progress"><div class="exp-progress-fill" id="expProgFill"></div></div>
+    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for review <span class="arrow">→</span></a><p>Requesting review comes before enrollment, billing, labs, or genetics.</p></div>
   </div>
 
   <script>
@@ -2658,7 +2744,7 @@ footer {
       "Step 02 / Genetics",
       "Step 03 / Bloodwork",
       "Step 04 / Consult",
-      "Step 05 / Closure loop",
+      "Step 05 / 90-day rerun",
     ];
     const tabs   = document.querySelectorAll('.exp-tab');
     const frames = document.querySelectorAll('.exp-frame');
@@ -2709,46 +2795,48 @@ footer {
 
         <div class="testimonial-card is-active" data-i="0">
           <div class="testimonial-portrait">
-            <img src="assets/photos/testimonial-portrait-4.jpg" alt="Aleron member">
+            <img src="assets/photos/testimonial-portrait-4.jpg" alt="Illustrative Aleron member scenario">
           </div>
           <div>
             <p class="testimonial-quote">"Best part isn't the labs or the engine. It's getting a voice message from my doctor on a Tuesday afternoon explaining what to do next, like a friend who happens to be brilliant."</p>
-            <div class="testimonial-attrib"><span class="testimonial-attrib-name">J.L.</span> &nbsp;·&nbsp; Member since 2025</div>
+            <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
           </div>
         </div>
 
         <div class="testimonial-card" data-i="1">
           <div class="testimonial-portrait">
-            <img src="assets/photos/testimonial-portrait-3.jpg" alt="Aleron member">
+            <img src="assets/photos/testimonial-portrait-3.jpg" alt="Illustrative Aleron member scenario">
           </div>
           <div>
             <p class="testimonial-quote">"My wife signed me up. I was the skeptic. Six months in I'm the one telling friends they need this. It's the first time I've felt actually seen by a doctor."</p>
-            <div class="testimonial-attrib"><span class="testimonial-attrib-name">D.R.</span> &nbsp;·&nbsp; Member since 2025</div>
+            <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
           </div>
         </div>
 
         <div class="testimonial-card" data-i="2">
           <div class="testimonial-portrait">
-            <img src="assets/photos/testimonial-portrait-2.jpg" alt="Aleron member">
+            <img src="assets/photos/testimonial-portrait-2.jpg" alt="Illustrative Aleron member scenario">
           </div>
           <div>
             <p class="testimonial-quote">"I have a family history of breast cancer. Aleron flagged a risk pattern my last three physicians had missed, and built a screening cadence that actually fits my life."</p>
-            <div class="testimonial-attrib"><span class="testimonial-attrib-name">A.W.</span> &nbsp;·&nbsp; Member since 2025</div>
+            <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
           </div>
         </div>
 
         <div class="testimonial-card" data-i="3">
           <div class="testimonial-portrait">
-            <img src="assets/photos/testimonial-portrait.jpg" alt="Aleron member">
+            <img src="assets/photos/testimonial-portrait.jpg" alt="Illustrative Aleron member scenario">
           </div>
           <div>
             <p class="testimonial-quote">"Aleron caught my ApoB trend three years before my regular physical would have. That's the part I'm still thinking about."</p>
-            <div class="testimonial-attrib"><span class="testimonial-attrib-name">M.K.</span> &nbsp;·&nbsp; Member since 2025</div>
+            <div class="testimonial-attrib"><span class="testimonial-attrib-name">Composite scenario</span> &nbsp;·&nbsp; Illustrative member voice</div>
           </div>
         </div>
 
       </div>
 
+      <p class="testimonial-trust-note">These are illustrative member scenarios until Aleron has permissioned member stories. They are not outcomes claims.</p>
+      <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Request your fit screen <span class="arrow">→</span></a><p>Two-minute first step. We confirm state availability before intake.</p></div>
       <div class="testimonial-controls">
         <div class="testimonial-dots" role="tablist" aria-label="Testimonials">
           <button class="testimonial-dot is-active" data-i="0" aria-label="Testimonial 1"></button>
@@ -2843,6 +2931,7 @@ footer {
         <div class="evidence-ledger-card"><strong>Aleron inference</strong><p>The headline combines overlapping drivers into an expected first-review reroute rate. Aleron should validate this on member data over time.</p></div>
         <div class="evidence-ledger-card"><strong>Claim boundary</strong><p>This page describes decision support and care-plan changes, not guaranteed disease prevention, risk reversal, or outcome improvement.</p></div>
       </div>
+      <div class="section-cta-row"><a href="#apply" class="btn btn-primary">See if your plan would change <span class="arrow">→</span></a><p>The first step is a fit screen, not a diagnosis or enrollment commitment.</p></div>
     </div>
   </div>
 </section>
@@ -2893,6 +2982,7 @@ footer {
         <p>Guidelines, trials, genetic interpretation, and screening standards change. We tell you when they change <em>your</em> plan.</p>
       </div>
     </div>
+    <div class="section-cta-row"><a href="#apply" class="btn btn-primary">Apply for the current wave <span class="arrow">→</span></a><p>Scope, costs, labs, genetics, and out-of-pocket exposure are reviewed before intake.</p></div>
   </div>
 </section>
 
@@ -2924,7 +3014,7 @@ footer {
             <div><strong>Care boundary</strong>Urgent symptoms are routed to urgent local care, not a membership funnel.</div>
           </div>
           <div class="hero-ctas" style="margin-top: 24px;">
-            <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Request review <span class="arrow">→</span></a>
+            <a href="mailto:apply@AleronMD.com?subject=Aleron%20Membership%20Review" class="btn btn-primary">Apply for current wave <span class="arrow">→</span></a>
             <a href="mailto:partnerships@AleronMD.com?subject=Aleron%20Demo%20Request" class="btn btn-ghost">Request demo <span class="arrow">→</span></a>
           </div>
         </div>
